@@ -35,7 +35,7 @@ namespace OnlineCoursess.Context
             // Fallback only if not configured by DI
             if (!optionsBuilder.IsConfigured)
             {
-                string connectionString = "Server=(localdb)\\MSSQLLocalDB;Database=OnlineCourses;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True";
+                string connectionString = "Server=DESKTOP-OMMCE3P;Database=OnlineCourses;Trusted_Connection=True;TrustServerCertificate=true";
                 optionsBuilder.UseSqlServer(connectionString);
             }
         }
